@@ -46,6 +46,8 @@ This project is a custom node for [ComfyUI](https://github.com/comfyanonymous/Co
 
 ## 💡 Pro Tip: How to Batch Process an Entire Folder
 
+![image](https://github.com/user-attachments/assets/1e5634a2-0bd5-4779-880d-d743c7a747ba)
+
 To automatically process every image in a directory, one after the other:
 
 1.  Set the node's **`mode`** to **`Batch`**.
