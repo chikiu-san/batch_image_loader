@@ -29,6 +29,8 @@ This project is a custom node for [ComfyUI](https://github.com/comfyanonymous/Co
 
 ## 🚀 Usage
 
+![image](https://github.com/user-attachments/assets/1e5634a2-0bd5-4779-880d-d743c7a747ba)
+
 1.  After restarting ComfyUI, you can add the node to your workflow.
 2.  Right-click on the canvas, then select `Add Node` -> `image/batch_loader` -> `🖼️ Batch Image Loader`.
 3.  Configure the node's inputs:
@@ -45,8 +47,6 @@ This project is a custom node for [ComfyUI](https://github.com/comfyanonymous/Co
     - **`filename_list`**: A string containing the list of all valid filenames in the directory, separated by newlines.
 
 ## 💡 Pro Tip: How to Batch Process an Entire Folder
-
-![image](https://github.com/user-attachments/assets/1e5634a2-0bd5-4779-880d-d743c7a747ba)
 
 To automatically process every image in a directory, one after the other:
 
