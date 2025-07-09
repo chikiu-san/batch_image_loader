@@ -17,7 +17,7 @@ This project is a custom node for [ComfyUI](https://github.com/comfyanonymous/Co
 3.  Clone this repository or place the `batch_image_loader.py` and `batch_image_loader.js` files into a new folder (e.g., `ComfyUI_BatchImageLoader`).
     ```bash
     cd ComfyUI/custom_nodes/
-    git clone <YOUR_REPOSITORY_URL> # Or create a folder and copy the files into it
+    git clone https://github.com/orion4d/batch_image_loader.py.git
     ```
 4.  Install the required Python dependencies. Make sure to use the correct Python environment (ComfyUI's virtual environment).
     ```bash
