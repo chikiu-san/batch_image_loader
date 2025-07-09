@@ -54,12 +54,18 @@ To automatically process every image in a directory, one after the other:
 6.  Set the **"Batch count"** to the total number of images in your folder.
 7.  Click **"Queue Prompt"**. ComfyUI will now run the workflow for each image in the directory.
 
-## 📂 File Structure
+<div align="center">
 
-```
-.
-├── batch_image_loader.py   # Backend node logic (Python)
-├── batch_image_loader.js   # User interface enhancements (JavaScript)
-├── requirements.txt        # Python dependencies
-└── README.md               # This file
-```
+<h3>🌟 <strong>Show Your Support</strong></h3>
+
+<p>If this project helped you, please consider giving it a ⭐ on GitHub!</p>
+
+<p><strong>Made with ❤️ for the ComfyUI community</strong></p>
+
+<p><strong>by Orion4D</strong></p>
+
+<a href="https://ko-fi.com/orion4d">
+<img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me A Coffee" height="41" width="174">
+</a>
+
+</div>
