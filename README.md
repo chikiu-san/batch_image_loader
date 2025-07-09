@@ -1,5 +1,7 @@
 # Batch Image Loader for ComfyUI
 
+![image](https://github.com/user-attachments/assets/1f822bf4-8787-4382-b164-8b177332165d)
+
 This project is a custom node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that allows for flexible image loading from a directory. It offers two main modes of operation: a "Batch" mode to sequentially iterate through all images in a folder, and a "Selection" mode to pick a specific image from a dropdown list with previews.
 
 ## 🖼️ Features
