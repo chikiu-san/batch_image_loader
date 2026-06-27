@@ -6,11 +6,14 @@ This project is a custom node for [ComfyUI](https://github.com/comfyanonymous/Co
 
 ## 🖼️ Features
 
+- **Folder Picker (cloud-friendly)**: Instead of typing a filesystem path, you pick a folder from a dropdown that the server fills in by scanning ComfyUI's `input/` directory and its subfolders. This makes the node work on hosted environments like **MimicPC** where you don't know (and can't type) the real server path. A **🔄 Refresh folders** button re-scans the input directory so folders you just uploaded show up without reloading ComfyUI.
 - **Batch Loading**: Automatically loads the next image in the directory with each workflow execution (thanks to the "increment" option on the `image_index` widget).
 - **Fixed Selection**: Allows you to choose a specific image from a dropdown list. The image list updates dynamically when you change the source directory.
 - **Image Preview**: In "Selection" mode, hover over a filename in the dropdown list to see a preview of the image directly in the ComfyUI interface.
 - **Dynamic UI**: The node's widgets (dropdown list or index field) are automatically shown or hidden based on the selected mode.
 - **Multiple Outputs**: The node provides not only the loaded image tensor but also the selected filename and the complete list of filenames in the directory.
+
+> **Upgrading from an older (typed-path) version?** `image_dir` is now a folder dropdown instead of a free-text path. Old workflows that saved a typed path (e.g. `ComfyUI/input`) will show a "Value not in list" error on the first run — just open the `image_dir` dropdown and re-select your folder. New workflows are unaffected.
 
 ## ⚙️ Installation
 
@@ -34,7 +37,7 @@ This project is a custom node for [ComfyUI](https://github.com/comfyanonymous/Co
 1.  After restarting ComfyUI, you can add the node to your workflow.
 2.  Right-click on the canvas, then select `Add Node` -> `image/batch_loader` -> `🖼️ Batch Image Loader`.
 3.  Configure the node's inputs:
-    - **`image_dir`**: The path to the directory containing your images (e.g., `ComfyUI/input` or an absolute path).
+    - **`image_dir`**: A dropdown of folders found inside ComfyUI's `input/` directory. Choose `input (root folder)` to use images placed directly in `input/`, or any subfolder you created/uploaded. Click **`🔄 Refresh folders`** after adding a new folder to make it appear in the list.
     - **`mode`**:
       - **`selection (fixed)`**: Displays a `selected_image` dropdown menu. You can choose an image from this list. Hover over the options to see a preview.
       - **`Batch`**: Displays a numeric `image_index` field. This field will automatically increment after each generation, loading the next image in the folder (sorted alphabetically).
